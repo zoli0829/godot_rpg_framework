@@ -1,15 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bn3r3jjy4anoa"]
+[gd_scene load_steps=10 format=3 uid="uid://bn3r3jjy4anoa"]
 
 [ext_resource type="PackedScene" uid="uid://c2r4oj44owm85" path="res://Player/player.tscn" id="1_s41d2"]
-[ext_resource type="Texture2D" uid="uid://jjtcagwsqut3" path="res://Assets/2D_Assets/grassy-meadow1-ue/grassy-meadow1_albedo.png" id="1_vx8ih"]
+[ext_resource type="Material" uid="uid://c2aoio6mcywe1" path="res://Assets/Materials/M_grassy_meadow_1.tres" id="1_t80w2"]
 [ext_resource type="PackedScene" uid="uid://cjxlt8jvdj8ng" path="res://Assets/3D_Assets/Environment/Rock_Cliff_Env_03.glb" id="2_gtnvv"]
-[ext_resource type="Texture2D" uid="uid://cqoroj0c03y71" path="res://Assets/2D_Assets/grassy-meadow1-ue/grassy-meadow1_ao.png" id="2_ugh17"]
-[ext_resource type="Texture2D" uid="uid://bgdhbqo1m7sem" path="res://Assets/2D_Assets/grassy-meadow1-ue/grassy-meadow1_metallic.png" id="3_eabcg"]
-[ext_resource type="Texture2D" uid="uid://eqvciftdjgf8" path="res://Assets/2D_Assets/grassy-meadow1-ue/grassy-meadow1_height.png" id="3_ugh17"]
 [ext_resource type="PackedScene" uid="uid://cd58kbubhmesi" path="res://Assets/3D_Assets/Environment/Topiary_Tree_Vege_01.glb" id="3_uhyyw"]
-[ext_resource type="Texture2D" uid="uid://g6kixhrr10f" path="res://Assets/2D_Assets/grassy-meadow1-ue/grassy-meadow1_normal-dx.png" id="4_dvejp"]
 [ext_resource type="PackedScene" uid="uid://cnmfcukbdjggp" path="res://Assets/3D_Assets/Environment/Bush_Vege_2.glb" id="4_t80w2"]
-[ext_resource type="Texture2D" uid="uid://qg6ewe6brpn3" path="res://Assets/2D_Assets/grassy-meadow1-ue/grassy-meadow1_roughness.png" id="5_3hgmi"]
 [ext_resource type="PackedScene" uid="uid://ycm8xmw34ibh" path="res://Assets/3D_Assets/Environment/Tree_Group_Vege.glb" id="5_8a2b0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_54b6e"]
@@ -25,19 +20,6 @@ sky = SubResource("Sky_s41d2")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtnvv"]
-albedo_texture = ExtResource("1_vx8ih")
-metallic_specular = 0.0
-metallic_texture = ExtResource("3_eabcg")
-roughness_texture = ExtResource("5_3hgmi")
-normal_enabled = true
-normal_texture = ExtResource("4_dvejp")
-ao_enabled = true
-ao_texture = ExtResource("2_ugh17")
-heightmap_enabled = true
-heightmap_scale = 1.0
-heightmap_texture = ExtResource("3_ugh17")
-
 [node name="Level" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -51,7 +33,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 use_collision = true
 size = Vector3(50, 1, 50)
-material = SubResource("StandardMaterial3D_gtnvv")
+material = ExtResource("1_t80w2")
 
 [node name="Player" parent="." instance=ExtResource("1_s41d2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
