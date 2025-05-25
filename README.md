@@ -21,6 +21,9 @@ This RPG Framework was inspired by the _Godot 4: Build an Action Combat RPG_ cou
 - _"I’ve started asking for a really small fee of $16 which allows you to use any and all of the PBR textures on the site commercially. You also get VIP access which allows you to download all of the textures on this site at once and some exclusive goodies."_ - [Free PBR](https://freepbr.com/)
 
 "Realistic Tree 2 Free" (https://skfb.ly/pw6oV) by Next Spring is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 "Tall Bush" (https://skfb.ly/o68qv) by SCADL & Co is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 "Boulder" (https://skfb.ly/6XrBp) by lukica is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 "Medieval Chest" (https://skfb.ly/MzHZ) by AIV is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
