@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://3aai0su7kimw"
+path.s3tc="res://.godot/imported/realistic_tree_2_free_1.png-549a3260780c645594ef7e2dcc816b05.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "58a897bc1ed8da33648f8efa396561ec"
+}
+
+[deps]
+
+source_file="res://Assets/3D_Assets/Environment/realistic_tree_free_2/realistic_tree_2_free_1.png"
+dest_files=["res://.godot/imported/realistic_tree_2_free_1.png-549a3260780c645594ef7e2dcc816b05.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Assets/3D_Assets/realistic_tree_2_free_1.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

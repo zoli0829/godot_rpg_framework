@@ -8,6 +8,19 @@ This RPG Framework was inspired by the _Godot 4: Build an Action Combat RPG_ cou
 
 - [Grassy Meadow 1 PBR Material](https://freepbr.com/product/grassy-meadow1/)
 
+### Models
+
+- [Realistic Tree 2 Free](https://sketchfab.com/3d-models/realistic-tree-2-free-2cd58e603ae542c78dd9cada46496921)
+- [Tall Bush](https://sketchfab.com/3d-models/tall-bush-acc6c43913864ace8d5942d65417ab35)
+- [Boulder](https://sketchfab.com/3d-models/boulder-640b7dde18404a36807acacf96d59200)
+
+- [Medieval Chest](https://sketchfab.com/3d-models/medieval-chest-037b03a3e0274279be4b93b7c7cedf01)
+
 ## What about using these commercially?
 
 - _"I’ve started asking for a really small fee of $16 which allows you to use any and all of the PBR textures on the site commercially. You also get VIP access which allows you to download all of the textures on this site at once and some exclusive goodies."_ - [Free PBR](https://freepbr.com/)
+
+"Realistic Tree 2 Free" (https://skfb.ly/pw6oV) by Next Spring is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Tall Bush" (https://skfb.ly/o68qv) by SCADL & Co is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Boulder" (https://skfb.ly/6XrBp) by lukica is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Medieval Chest" (https://skfb.ly/MzHZ) by AIV is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
