@@ -22,6 +22,8 @@ var _attack_direction := Vector3.ZERO
 @onready var attack_cast: RayCast3D = %AttackCast
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var collision_shape_3d: CollisionShape3D = $CollisionShape3D
+@onready var area_attack: ShapeCast3D = $RigPivot/AreaAttack
+
 
 
 func _ready() -> void:
@@ -37,6 +39,7 @@ func _physics_process(delta: float) -> void:
 	
 	handle_idle_physics_frame(delta, direction)
 	handle_slashing_physics_frame(delta)
+	handle_overhead_physics_frame()
 	handle_jumping_physics_frame()
 	
 	# Add the gravity.
@@ -55,6 +58,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if rig.is_idle():
 		if event.is_action_pressed("attack"):
 			slash_attack()
+		if event.is_action_pressed("heavy_attack"):
+			rig.travel("Overhead")
 
 
 func get_movement_direction() -> Vector3:
@@ -104,6 +109,13 @@ func handle_slashing_physics_frame(delta: float) -> void:
 	attack_cast.deal_damage()
 
 
+func handle_overhead_physics_frame() -> void:
+	if not rig.is_overhead():
+		return
+	velocity.x = 0.0
+	velocity.z = 0.0
+
+
 func handle_idle_physics_frame(delta: float, direction: Vector3) -> void:
 	if not rig.is_idle():
 		return
@@ -125,3 +137,7 @@ func _on_health_component_defeat() -> void:
 	rig.travel("Defeat")
 	collision_shape_3d.disabled = true
 	set_physics_process(false)
+
+
+func _on_rig_heavy_attack() -> void:
+	area_attack.deal_damage(50.0)

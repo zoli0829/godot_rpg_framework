@@ -37,7 +37,7 @@ size = Vector3(50, 1, 50)
 material = ExtResource("1_t80w2")
 
 [node name="Player" parent="." instance=ExtResource("1_s41d2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(-0.0124089, 0, 0.999923, 0, 1, 0, -0.999923, 0, -0.0124089, 0, 1, 0)
 
 [node name="MapBoundary" type="Node3D" parent="."]
 
