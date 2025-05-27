@@ -12,11 +12,13 @@ var current_health: float:
 			defeat.emit()
 		health_changed.emit()
 
-
 func update_max_health(max_hp_in: float) -> void:
 	max_health = max_hp_in
 	current_health = max_health
 
-
-func take_damage(damage_in: float) -> void:
-	current_health -= damage_in
+func take_damage(damage_in: float, isCritical: bool) -> void:
+	var damage = damage_in
+	if isCritical:
+		damage *= 2.0
+		print("critical hit")
+	current_health -= damage

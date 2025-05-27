@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://bauvwun0tboj3"]
+
+[ext_resource type="Texture2D" uid="uid://durm5q57qrw2b" path="res://Assets/2D_Assets/sloppy-mortar-stone-wall-bl/sloppy-mortar-stone-wall_albedo.png" id="1_vpvku"]
+[ext_resource type="Texture2D" uid="uid://bm1givyc10e0k" path="res://Assets/2D_Assets/sloppy-mortar-stone-wall-bl/sloppy-mortar-stone-wall_height.png" id="2_v8egf"]
+[ext_resource type="Texture2D" uid="uid://cjd7bds5wbu0a" path="res://Assets/2D_Assets/sloppy-mortar-stone-wall-bl/sloppy-mortar-stone-wall_metallic.png" id="3_y4j40"]
+[ext_resource type="Texture2D" uid="uid://di0p08cv1mwta" path="res://Assets/2D_Assets/sloppy-mortar-stone-wall-bl/sloppy-mortar-stone-wall_normal-ogl.png" id="4_0ylvh"]
+[ext_resource type="Texture2D" uid="uid://ljnmlyechgg6" path="res://Assets/2D_Assets/sloppy-mortar-stone-wall-bl/sloppy-mortar-stone-wall_roughness.png" id="5_bx734"]
+
+[resource]
+albedo_texture = ExtResource("1_vpvku")
+metallic = 1.0
+metallic_texture = ExtResource("3_y4j40")
+roughness_texture = ExtResource("5_bx734")
+normal_enabled = true
+normal_texture = ExtResource("4_0ylvh")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_v8egf")

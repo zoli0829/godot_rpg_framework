@@ -7,6 +7,7 @@ This RPG Framework was inspired by the _Godot 4: Build an Action Combat RPG_ cou
 ### Material
 
 - [Grassy Meadow 1 PBR Material](https://freepbr.com/product/grassy-meadow1/)
+- [Sloppy Mortar Stone Wall PBR Material](https://freepbr.com/product/sloppy-mortar-stone-wall-pbr/)
 
 ### Models
 
