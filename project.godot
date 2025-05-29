@@ -15,6 +15,10 @@ run/main_scene="uid://bn3r3jjy4anoa"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+VfxManager="*res://Autoload/vfx_manager.tscn"
+
 [input]
 
 move_forward={

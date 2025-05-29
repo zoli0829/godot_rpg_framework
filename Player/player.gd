@@ -30,8 +30,8 @@ var _attack_direction := Vector3.ZERO
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	health_component.update_max_health(30.0)
-	print(stats.get_base_speed())
+	health_component.update_max_health(stats.get_max_hp())
+	stats.level_up_notification.connect(func(): health_component.update_max_health(stats.get_max_hp()))
 
 func _physics_process(delta: float) -> void:
 	frame_camera_rotation()
