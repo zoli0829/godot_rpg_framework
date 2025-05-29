@@ -17,6 +17,10 @@ This RPG Framework was inspired by the _Godot 4: Build an Action Combat RPG_ cou
 
 - [Medieval Chest](https://sketchfab.com/3d-models/medieval-chest-037b03a3e0274279be4b93b7c7cedf01)
 
+### Fonts
+
+- [Libre Caslon Text](https://fonts.google.com/specimen/Libre+Caslon+Text?query=libre+caslon)
+
 ## What about using these commercially?
 
 - _"I’ve started asking for a really small fee of $16 which allows you to use any and all of the PBR textures on the site commercially. You also get VIP access which allows you to download all of the textures on this site at once and some exclusive goodies."_ - [Free PBR](https://freepbr.com/)
@@ -28,3 +32,5 @@ This RPG Framework was inspired by the _Godot 4: Build an Action Combat RPG_ cou
 "Boulder" (https://skfb.ly/6XrBp) by lukica is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Medieval Chest" (https://skfb.ly/MzHZ) by AIV is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Libre Caslon Text" (https://fonts.google.com/specimen/Libre+Caslon+Text/license?query=libre+caslon)

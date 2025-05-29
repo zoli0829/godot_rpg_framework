@@ -2,6 +2,7 @@ extends Resource
 class_name  CharacterStats
 
 signal level_up_notification()
+signal update_stats()
 
 class Ability:
 	var min_modifier: float
@@ -35,6 +36,7 @@ var xp := 0:
 			xp -= boundary
 			level_up()
 			boundary = percentage_level_up_boundary()
+			update_stats.emit()
 
 const MIN_DASH_COOLDOWN := 1.5
 const MAX_DASH_COOLDOWN := 0.5
