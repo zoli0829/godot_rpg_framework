@@ -16,3 +16,37 @@ mono_crash.*.json
 
 # Ignore UI assets folder
 2D_Assets/UIAssets/
+Assets/2D_Assets/UIAssets/Button Small/button_small.png
+Assets/2D_Assets/UIAssets/Button Small/button_small.png.import
+Assets/2D_Assets/UIAssets/Button Small/button_small_hover.png
+Assets/2D_Assets/UIAssets/Button Small/button_small_hover.png.import
+Assets/2D_Assets/UIAssets/Button Small/button_small_press.png
+Assets/2D_Assets/UIAssets/Button Small/button_small_press.png.import
+Assets/2D_Assets/UIAssets/Icons/armor_icon.png
+Assets/2D_Assets/UIAssets/Icons/armor_icon.png.import
+Assets/2D_Assets/UIAssets/Icons/ItemHover.png
+Assets/2D_Assets/UIAssets/Icons/ItemHover.png.import
+Assets/2D_Assets/UIAssets/Icons/ItemPress.png
+Assets/2D_Assets/UIAssets/Icons/ItemPress.png.import
+Assets/2D_Assets/UIAssets/Icons/shield_icon.png
+Assets/2D_Assets/UIAssets/Icons/shield_icon.png.import
+Assets/2D_Assets/UIAssets/Icons/spell_slot_empty.png
+Assets/2D_Assets/UIAssets/Icons/spell_slot_empty.png.import
+Assets/2D_Assets/UIAssets/Icons/star_icon.png
+Assets/2D_Assets/UIAssets/Icons/star_icon.png.import
+Assets/2D_Assets/UIAssets/Icons/sword_icon.png
+Assets/2D_Assets/UIAssets/Icons/sword_icon.png.import
+Assets/2D_Assets/UIAssets/Unitframe/BlueBar.png
+Assets/2D_Assets/UIAssets/Unitframe/BlueBar.png.import
+Assets/2D_Assets/UIAssets/Unitframe/HealthBarOver.png
+Assets/2D_Assets/UIAssets/Unitframe/HealthBarOver.png.import
+Assets/2D_Assets/UIAssets/Unitframe/HealthBarUnder.png
+Assets/2D_Assets/UIAssets/Unitframe/HealthBarUnder.png.import
+Assets/2D_Assets/UIAssets/Unitframe/MainBar.png
+Assets/2D_Assets/UIAssets/Unitframe/MainBar.png.import
+Assets/2D_Assets/UIAssets/Window/NumberFrame.png
+Assets/2D_Assets/UIAssets/Window/NumberFrame.png.import
+Assets/2D_Assets/UIAssets/Window/window_c.png
+Assets/2D_Assets/UIAssets/Window/window_c.png.import
+Assets/2D_Assets/UIAssets/Window/window_header.png
+Assets/2D_Assets/UIAssets/Window/window_header.png.import
