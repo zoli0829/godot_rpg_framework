@@ -66,7 +66,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			slash_attack()
 		if event.is_action_pressed("heavy_attack"):
 			rig.travel("Overhead")
-			
+		
 	if event.is_action_pressed("debug_gain_xp"):
 		stats.xp += 10000.0
 		print(stats.level)

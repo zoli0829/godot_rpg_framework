@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkaomi4tbgdhd"]
+[gd_scene load_steps=9 format=3 uid="uid://dkaomi4tbgdhd"]
 
 [ext_resource type="Script" uid="uid://d4ar452vj6vce" path="res://UserInterface/user_interface.gd" id="1_cp462"]
 [ext_resource type="Texture2D" uid="uid://ciov7e3cfee5c" path="res://Assets/2D_Assets/UIAssets/Unitframe/HealthBarUnder.png" id="1_v7due"]
 [ext_resource type="Texture2D" uid="uid://dl37axvetryyv" path="res://Assets/2D_Assets/UIAssets/Unitframe/HealthBarOver.png" id="2_mm0wo"]
+[ext_resource type="Texture2D" uid="uid://cn635lmplj188" path="res://Assets/2D_Assets/UIAssets/Unitframe/MainBar.png" id="3_1yg0r"]
 [ext_resource type="FontFile" uid="uid://d1beqih7gwk2u" path="res://Assets/Fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf" id="3_mm0wo"]
+[ext_resource type="Texture2D" uid="uid://d3i1su272hpyi" path="res://Assets/2D_Assets/UIAssets/Unitframe/BlueBar.png" id="4_l8ojb"]
+[ext_resource type="PackedScene" uid="uid://b3twkpkdw1hoq" path="res://UserInterface/inventory.tscn" id="7_l8ojb"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_cp462"]
 font = ExtResource("3_mm0wo")
@@ -11,6 +14,7 @@ font_size = 26
 font_color = Color(0.8, 0.643137, 0.368627, 1)
 
 [node name="UserInterface" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -43,6 +47,45 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_v7due")
 
+[node name="HealthBar" type="TextureProgressBar" parent="MarginContainer/InfoBar/HealthBarUnder"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_right = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+texture_progress = ExtResource("3_1yg0r")
+
+[node name="HealthLabel" type="Label" parent="MarginContainer/InfoBar/HealthBarUnder/HealthBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(95, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 94.0
+offset_top = -15.0
+offset_right = 189.0
+offset_bottom = -15.0
+grow_vertical = 2
+text = "1000/1000"
+label_settings = SubResource("LabelSettings_cp462")
+vertical_alignment = 1
+
+[node name="XPBar" type="TextureProgressBar" parent="MarginContainer/InfoBar/HealthBarUnder"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+texture_progress = ExtResource("4_l8ojb")
+
 [node name="HealthBarOver" type="TextureRect" parent="MarginContainer/InfoBar"]
 layout_mode = 0
 offset_right = 40.0
@@ -61,3 +104,7 @@ text = "999"
 label_settings = SubResource("LabelSettings_cp462")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Inventory" parent="." instance=ExtResource("7_l8ojb")]
+visible = false
+layout_mode = 1
