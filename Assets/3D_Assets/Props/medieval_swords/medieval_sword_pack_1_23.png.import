@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ccpqfowf48oy7"
+path.s3tc="res://.godot/imported/medieval_sword_pack_1_23.png-1a49341e4193d57a91cf71c2ff7a9032.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "c7776487f9757fa14a3de62f1b561eb7"
+}
+
+[deps]
+
+source_file="res://Assets/3D_Assets/Props/medieval_swords/medieval_sword_pack_1_23.png"
+dest_files=["res://.godot/imported/medieval_sword_pack_1_23.png-1a49341e4193d57a91cf71c2ff7a9032.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Assets/3D_Assets/Props/medieval_sword_pack_1_23.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

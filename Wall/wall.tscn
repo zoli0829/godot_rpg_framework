@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1kf2006213a2"]
+
+[ext_resource type="Material" uid="uid://bauvwun0tboj3" path="res://Assets/2D_Assets/sloppy-mortar-stone-wall-bl/M_sloppy_mortar_stone_wall.tres" id="1_sl42o"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jt7bp"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 8, 0, 0, 0, 2, 0, 4, 0)
+material_override = ExtResource("1_sl42o")
+mesh = SubResource("BoxMesh_jt7bp")
