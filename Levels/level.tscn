@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bn3r3jjy4anoa"]
+[gd_scene load_steps=12 format=3 uid="uid://bn3r3jjy4anoa"]
 
 [ext_resource type="PackedScene" uid="uid://c2r4oj44owm85" path="res://Player/player.tscn" id="1_s41d2"]
 [ext_resource type="Material" uid="uid://c2aoio6mcywe1" path="res://Assets/Materials/M_grassy_meadow_1.tres" id="1_t80w2"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://clm21r5whdikj" path="res://Assets/3D_Assets/Environment/realistic_tree_free_2/realistic_tree_2_free.glb" id="6_8a2b0"]
 [ext_resource type="PackedScene" uid="uid://dhwc7ceec0ir" path="res://Enemy/enemy.tscn" id="7_8a2b0"]
 [ext_resource type="PackedScene" uid="uid://s8e6y2xy2ugi" path="res://Assets/3D_Assets/Props/medieval_chest/medieval_chest.glb" id="7_ecu0b"]
+[ext_resource type="PackedScene" uid="uid://cwbd38vr3lahm" path="res://Particles/fire_particles.tscn" id="8_ecu0b"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_54b6e"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -199,3 +200,6 @@ transform = Transform3D(0.0544274, 0, -0.998518, 0, 1, 0, 0.998518, 0, 0.0544274
 
 [node name="Sketchfab_Scene" parent="Props" instance=ExtResource("7_ecu0b")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.6467, 0.5, 1.34332)
+
+[node name="fire_particles" parent="Props" instance=ExtResource("8_ecu0b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6377, 0.292619, 3.70772)

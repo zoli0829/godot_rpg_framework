@@ -19,6 +19,7 @@ func update_stats_display() -> void:
 	level_label.text = str(player.stats.level)
 	xp_bar.max_value = player.stats.percentage_level_up_boundary()
 	xp_bar.value = player.stats.xp
+	inventory.update_stats()
 
 func update_health() -> void:
 	health_bar.max_value = player.health_component.max_health
@@ -29,6 +30,7 @@ func open_menu() -> void:
 	inventory.visible = true
 	get_tree().paused = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	inventory.update_gear_stats()
 
 func close_menu() -> void:
 	inventory.visible = false
