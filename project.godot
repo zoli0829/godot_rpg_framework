@@ -85,3 +85,9 @@ open_menu={
 3d_physics/layer_2="Interaction"
 3d_physics/layer_3="Player"
 3d_physics/layer_4="Enemy"
+
+[rendering]
+
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=4
+global_illumination/voxel_gi/quality=1
+anti_aliasing/quality/msaa_3d=2

@@ -7,6 +7,8 @@ signal heavy_attack()
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var playback: AnimationNodeStateMachinePlayback = animation_tree["parameters/playback"]
 @onready var skeleton_3d: Skeleton3D = $CharacterRig/GameRig/Skeleton3D
+@onready var shield_slot: Node3D = %ShieldSlot
+@onready var weapon_slot: Node3D = %WeaponSlot
 
 @onready var villager_meshes: Array[MeshInstance3D] = [
 	$CharacterRig/GameRig/Skeleton3D/Villager_01,
@@ -48,3 +50,15 @@ func set_active_mesh(active_mesh: MeshInstance3D) -> void:
 func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Overhead":
 		heavy_attack.emit()
+
+func replace_shield(shield_scene: PackedScene) -> void:
+	for child in shield_slot.get_children():
+		child.queue_free()
+	var new_shield := shield_scene.instantiate()
+	shield_slot.add_child(new_shield)
+
+func replace_weapon(weapon_scene: PackedScene) -> void:
+	for child in weapon_slot.get_children():
+		child.queue_free()
+	var new_weapon := weapon_scene.instantiate()
+	weapon_slot.add_child(new_weapon)

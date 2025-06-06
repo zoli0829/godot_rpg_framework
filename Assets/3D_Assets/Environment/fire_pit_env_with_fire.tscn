@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn0tiq5c4lop4"]
+
+[ext_resource type="PackedScene" uid="uid://bq4t8ftph0xl7" path="res://Assets/3D_Assets/Environment/Fire_Pit_Env.glb" id="1_mr1iu"]
+[ext_resource type="PackedScene" uid="uid://cwbd38vr3lahm" path="res://Particles/fire_particles.tscn" id="2_s274h"]
+
+[node name="Fire_Pit_Env2" instance=ExtResource("1_mr1iu")]
+
+[node name="fire_particles" parent="." index="1" instance=ExtResource("2_s274h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578408, 0)
