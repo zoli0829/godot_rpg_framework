@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dy4u0o5lb3vb2"]
+
+[ext_resource type="Script" uid="uid://dt5wi0wjqa0sm" path="res://Interactable/chest.gd" id="1_bbitu"]
+[ext_resource type="PackedScene" uid="uid://s8e6y2xy2ugi" path="res://Assets/3D_Assets/Props/medieval_chest/medieval_chest.glb" id="1_wdtiw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bbitu"]
+size = Vector3(1.92932, 1, 1.06053)
+
+[node name="Chest" type="StaticBody3D"]
+script = ExtResource("1_bbitu")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_wdtiw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000549316, 0, 0.0418777)
+shape = SubResource("BoxShape3D_bbitu")
