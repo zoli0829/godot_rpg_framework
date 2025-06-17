@@ -5,6 +5,9 @@ extends Control
 @onready var xp_bar: TextureProgressBar = %XPBar
 @onready var health_label: Label = %HealthLabel
 @onready var inventory: Control = $Inventory
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var interact_text: Label = %InteractText
+
 
 @export var player: Player
 
@@ -36,3 +39,8 @@ func close_menu() -> void:
 	inventory.visible = false
 	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func update_interact_text(text_in: String) -> void:
+	animation_player.stop()
+	animation_player.play("FadeOutText")
+	interact_text.text = text_in

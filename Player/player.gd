@@ -26,6 +26,7 @@ var _attack_direction := Vector3.ZERO
 @onready var collision_shape_3d: CollisionShape3D = $CollisionShape3D
 @onready var area_attack: ShapeCast3D = $RigPivot/AreaAttack
 @onready var user_interface: Control = $UserInterface
+@onready var interaction_cast: ShapeCast3D = $RigPivot/InteractionCast
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -46,6 +47,7 @@ func _physics_process(delta: float) -> void:
 	handle_slashing_physics_frame(delta)
 	handle_overhead_physics_frame()
 	handle_jumping_physics_frame()
+	interaction_cast.check_interactions()
 	
 	# Add the gravity.
 	if not is_on_floor():
@@ -69,7 +71,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 	if event.is_action_pressed("debug_gain_xp"):
 		stats.xp += 10000.0
-		print(stats.level)
 
 func get_movement_direction() -> Vector3:
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
