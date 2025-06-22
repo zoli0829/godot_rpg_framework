@@ -1,6 +1,7 @@
 extends ShapeCast3D
 
 @export var ui: Control
+# just needed to keep my streak alive
 
 func check_interactions() -> void:
 	for collision in get_collision_count():
