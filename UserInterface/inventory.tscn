@@ -1,10 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://b3twkpkdw1hoq"]
+[gd_scene load_steps=24 format=3 uid="uid://b3twkpkdw1hoq"]
 
 [ext_resource type="Script" uid="uid://cnh8vipap30si" path="res://UserInterface/inventory.gd" id="1_6ivh5"]
 [ext_resource type="Texture2D" uid="uid://di8d8ywpm8ky" path="res://Assets/2D_Assets/UIAssets/Window/window_header.png" id="1_hqat6"]
 [ext_resource type="FontFile" uid="uid://d1beqih7gwk2u" path="res://Assets/Fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf" id="2_w4h00"]
 [ext_resource type="StyleBox" uid="uid://c6tnlpjgx3dea" path="res://UserInterface/ui_panel.tres" id="3_w4h00"]
 [ext_resource type="Texture2D" uid="uid://rw11fm58goac" path="res://Assets/2D_Assets/UIAssets/Icons/spell_slot_empty.png" id="4_c11vl"]
+[ext_resource type="Texture2D" uid="uid://sbc711hq85vk" path="res://Assets/2D_Assets/UIAssets/Window/NumberFrame.png" id="5_2pqip"]
 [ext_resource type="FontFile" uid="uid://0i22e24wp5c3" path="res://Assets/Fonts/Libre_Caslon_Text/LibreCaslonText-Italic.ttf" id="5_6ivh5"]
 [ext_resource type="PackedScene" uid="uid://cwef8426rdoyn" path="res://Player/rig.tscn" id="5_qnmx2"]
 [ext_resource type="Texture2D" uid="uid://cljv6e5eapbgr" path="res://Assets/2D_Assets/UIAssets/Button Small/button_small.png" id="7_5spcf"]
@@ -22,6 +23,11 @@ fill_to = Vector2(0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_h3yq5"]
 font = ExtResource("2_w4h00")
 font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_pvbvh"]
+font = ExtResource("2_w4h00")
+font_size = 26
+font_color = Color(0.611765, 0.431373, 0.247059, 1)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_54b6e"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -120,10 +126,32 @@ custom_minimum_size = Vector2(960, 0)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("3_w4h00")
 
-[node name="ItemGrid" type="GridContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/HeldItems"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/HeldItems"]
+layout_mode = 2
+
+[node name="ItemGrid" type="GridContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/HeldItems/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 3
 columns = 7
+
+[node name="GoldFrame" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/HeldItems/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("5_2pqip")
+
+[node name="GoldLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/HeldItems/VBoxContainer/GoldFrame"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0g"
+label_settings = SubResource("LabelSettings_pvbvh")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(512, 0)
