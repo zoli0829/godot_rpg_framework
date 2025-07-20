@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bn3r3jjy4anoa"]
+[gd_scene load_steps=27 format=3 uid="uid://bn3r3jjy4anoa"]
 
 [ext_resource type="VoxelGIData" uid="uid://d026k37x33kvg" path="res://Levels/GIData/level.VoxelGI_data.res" id="1_dvejp"]
 [ext_resource type="PackedScene" uid="uid://c2r4oj44owm85" path="res://Player/player.tscn" id="1_s41d2"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bl3fsy6rrw0j4" path="res://Assets/3D_Assets/Environment/Large_Mountain_Env_02.glb" id="12_3hgmi"]
 [ext_resource type="PackedScene" uid="uid://db08w2ky0o8rk" path="res://Assets/3D_Assets/Character/Gear/Tall_Shield.glb" id="12_fw3l5"]
 [ext_resource type="PackedScene" uid="uid://b6wne38n3gp33" path="res://Assets/3D_Assets/Character/Gear/Broken_Sword.glb" id="13_fw3l5"]
+[ext_resource type="PackedScene" uid="uid://ct14slh0d6ib6" path="res://Assets/3D_Assets/Character/Gear/Short_Shield.glb" id="14_1sae0"]
 [ext_resource type="PackedScene" uid="uid://kn7b7sdf8rbq" path="res://Assets/3D_Assets/Character/Gear/Battleaxe.glb" id="14_wjjle"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_54b6e"]
@@ -215,7 +216,7 @@ visible = false
 
 [node name="ArmorIcon" parent="NavigationRegion3D/Props/Chest" instance=ExtResource("9_vmy0u")]
 visible = false
-power = 10
+protection = 0
 
 [node name="Chest2" parent="NavigationRegion3D/Props" instance=ExtResource("7_xsqsu")]
 transform = Transform3D(0.99292, 0, -0.118785, 0, 1, 0, 0.118785, 0, 0.99292, 1.95382, 0.508103, 10.6693)
@@ -223,11 +224,6 @@ transform = Transform3D(0.99292, 0, -0.118785, 0, 1, 0, 0.118785, 0, 0.99292, 1.
 [node name="WeaponIcon" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("10_8hqpc")]
 visible = false
 power = 8
-
-[node name="ShieldIcon" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("11_jmcc3")]
-visible = false
-protection = 15
-item_model = ExtResource("12_fw3l5")
 
 [node name="WeaponIcon2" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("10_8hqpc")]
 visible = false
@@ -238,6 +234,25 @@ item_model = ExtResource("13_fw3l5")
 visible = false
 power = 12
 item_model = ExtResource("14_wjjle")
+
+[node name="ArmorIcon" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("9_vmy0u")]
+visible = false
+protection = 10
+
+[node name="ArmorIcon2" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("9_vmy0u")]
+visible = false
+protection = 15
+armor = 1
+
+[node name="ShieldIcon2" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("11_jmcc3")]
+visible = false
+protection = 5
+item_model = ExtResource("14_1sae0")
+
+[node name="ShieldIcon" parent="NavigationRegion3D/Props/Chest2" instance=ExtResource("11_jmcc3")]
+visible = false
+protection = 10
+item_model = ExtResource("12_fw3l5")
 
 [node name="Castle" type="Node3D" parent="NavigationRegion3D"]
 
