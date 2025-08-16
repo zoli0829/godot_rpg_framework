@@ -145,3 +145,15 @@ func _on_rig_heavy_attack() -> void:
 
 func exponential_decay(a: float, b: float, decay: float, delta: float) -> float:
 	return b + (a - b) * exp(-decay * delta) 
+
+func replace_shield(shield_scene: PackedScene) -> void:
+	for child in rig.shield_slot.get_children():
+		child.queue_free()
+	var new_shield := shield_scene.instantiate()
+	rig.shield_slot.add_child(new_shield)
+
+func replace_weapon(weapon_scene: PackedScene) -> void:
+	for child in rig.weapon_slot.get_children():
+		child.queue_free()
+	var new_weapon := weapon_scene.instantiate()
+	rig.weapon_slot.add_child(new_weapon)
